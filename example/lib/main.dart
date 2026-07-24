@@ -1,4 +1,4 @@
-import 'package:custom_faqs/pages/custom_faq.page.dart';
+import 'package:custom_faqs/custom_faqs.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +18,9 @@ class MyApp extends StatelessWidget {
       ),
       home: const CustomFaqPage(
         title: 'Faqs',
+        subtitle: 'Answers to common questions',
         link: "https://fuodz.edentech.online/api/app/faqs",
+        style: CustomFaqStyle.classic,
       ),
     );
   }
